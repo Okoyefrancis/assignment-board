@@ -6,6 +6,7 @@ const initialState = {
 
 const globalState = createSlice({
     name: "state",
+    
     initialState,
     reducers: {
         toggled: (state: any) => {
