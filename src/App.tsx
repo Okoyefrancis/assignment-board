@@ -1,10 +1,13 @@
-import React from 'react'
 import AssignmentBoard from './StudentAssignment/AssignmentBoard'
-
+import { Provider, } from "react-redux"
+import { store } from './global/store'
 const App = () => {
+
   return (
     <div>
-      <AssignmentBoard/>
+      <Provider store={store}>
+        <AssignmentBoard />
+      </Provider>
     </div>
   )
 }
